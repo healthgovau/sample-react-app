@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./Button.css";
+import styles from "./Button.module.css";
 
 export default class Button extends React.Component {
   static propTypes = {
@@ -16,9 +16,9 @@ export default class Button extends React.Component {
 
   render() {
     const className = [
-      "component-button",
-      this.props.orange ? "orange" : "",
-      this.props.wide ? "wide" : "",
+      styles["component-button"],
+      this.props.orange ? styles["orange"] : "",
+      this.props.wide ? styles["wide"] : "",
     ];
 
     return (

@@ -2,7 +2,7 @@ import Button from "./Button";
 import React from "react";
 import PropTypes from "prop-types";
 
-import "./ButtonPanel.css";
+import styles from "./ButtonPanel.module.css";
 
 export default class ButtonPanel extends React.Component {
   static propTypes = {
@@ -15,7 +15,7 @@ export default class ButtonPanel extends React.Component {
 
   render() {
     return (
-      <div className="component-button-panel">
+      <div className={styles["component-button-panel"]}>
         <div>
           <Button name="AC" clickHandler={this.handleClick} />
           <Button name="+/-" clickHandler={this.handleClick} />

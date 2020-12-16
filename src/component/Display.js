@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "./Display.css";
+import styles from "./Display.module.css";
 
 export default class Display extends React.Component {
   static propTypes = {
@@ -10,7 +10,7 @@ export default class Display extends React.Component {
 
   render() {
     return (
-      <div className="component-display">
+      <div className={styles["component-display"]}>
         <div>{this.props.value}</div>
       </div>
     );
